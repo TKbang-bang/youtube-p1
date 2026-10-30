@@ -11,6 +11,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background: transparent;
+  padding-inline: 4rem;
 
   &.is-scrolled {
     background: rgba(16, 16, 20, 0.18);
@@ -93,6 +94,7 @@ header {
 @media (max-width: 1024px) {
   header {
     background-color: var(--bg);
+    padding-inline: 2rem;
 
     .menu {
       display: block;

@@ -43,16 +43,19 @@ body {
 
 .container {
   padding-inline: 4rem;
+  padding-block: 7rem;
 }
 
 @media (max-width: 1024px) {
   .container {
     padding-inline: 2rem;
+    padding-block: 6rem;
   }
 }
 
 @media (max-width: 767px) {
   .container {
     padding-inline: 1rem;
+    padding-block: 5rem;
   }
 }

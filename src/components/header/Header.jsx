@@ -37,10 +37,7 @@ function Header() {
   }, [location.pathname]);
 
   return (
-    <header
-      className={`container ${scrolled ? "is-scrolled" : ""}`}
-      ref={headerRef}
-    >
+    <header className={` ${scrolled ? "is-scrolled" : ""}`} ref={headerRef}>
       <Link to="/" className="title_a">
         <h1 className="title">
           <span className="lil">Lil</span>
