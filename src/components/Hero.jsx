@@ -4,7 +4,7 @@ import "./hero.css";
 
 function Hero() {
   return (
-    <section className="hero" id="home">
+    <section className="hero container" id="home">
       <div className="presentation">
         <div className="right">
           <p className="clasic_title title">

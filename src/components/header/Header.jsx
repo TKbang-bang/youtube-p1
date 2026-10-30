@@ -1,16 +1,27 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import { CloseIcon, MenuIcon, UpRightIcon } from "../svgs/Icons";
+import React, { useEffect, useState } from "react";
+import { NavLink, Link } from "react-router-dom";
+import { CloseIcon, MenuIcon, UpRightIcon } from "../../svgs/Icons";
+import "./header.css";
 
 function Header() {
+  const [scrolled, setScrolled] = useState(false);
+  // const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header>
-      <a href="/">
-        <h1>
+    <header className={`container ${scrolled ? "is-scrolled" : ""}`}>
+      <Link to="/" className="title_a">
+        <h1 className="title">
           <span className="lil">Lil</span>
           <span className="adams">Adams</span>
         </h1>
-      </a>
+      </Link>
 
       <div className="menu">
         <span>
@@ -43,9 +54,8 @@ function Header() {
           </li>
         </ul>
 
-        <a href="https://youtube.com" about="_blank">
-          <span>Youtube</span>
-          <UpRightIcon />
+        <a href="https://youtube.com" target="_blank" className="to-yt">
+          YouTube ↗
         </a>
       </div>
     </header>
