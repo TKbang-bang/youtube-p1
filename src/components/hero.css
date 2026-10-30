@@ -24,7 +24,7 @@
     margin: 0 auto;
     padding-block: 7rem;
 
-    animation: presentation_fade_in 0.7s ease-in-out;
+    animation: presentation_fade_in 0.4s ease-in;
   }
 
   .right {
@@ -160,13 +160,13 @@
     user-select: none;
     filter: drop-shadow(-20px 0 60px rgba(246, 161, 92, 0.12));
 
-    animation: image_fade_in 0.7s ease-in-out;
+    animation: image_fade_in 0.4s ease-in;
   }
 }
 
 @keyframes presentation_fade_in {
   from {
-    transform: translate(-5rem, -5rem);
+    transform: translate(0, 2rem);
     opacity: 0;
   }
 
@@ -177,12 +177,14 @@
 }
 @keyframes image_fade_in {
   from {
-    transform: translate(15rem, 0);
+    transform: translate(2rem, 0);
+    /* transform: scale(0.8); */
     opacity: 0;
   }
 
   to {
     transform: translate(0, 0);
+    /* transform: scale(1); */
     opacity: 1;
   }
 }

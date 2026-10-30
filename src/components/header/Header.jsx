@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { NavLink, Link } from "react-router-dom";
-import { CloseIcon, MenuIcon, UpRightIcon } from "../../svgs/Icons";
+import React, { useEffect, useState, useRef } from "react";
+import { NavLink, Link, useLocation } from "react-router-dom";
+import { CloseIcon, MenuIcon } from "../../svgs/Icons";
 import "./header.css";
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
-  // const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const headerRef = useRef(null);
+  const location = useLocation();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -14,8 +16,31 @@ function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleClickOutside = (e) => {
+      if (headerRef.current && !headerRef.current.contains(e.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
+
   return (
-    <header className={`container ${scrolled ? "is-scrolled" : ""}`}>
+    <header
+      className={`container ${scrolled ? "is-scrolled" : ""}`}
+      ref={headerRef}
+    >
       <Link to="/" className="title_a">
         <h1 className="title">
           <span className="lil">Lil</span>
@@ -23,16 +48,16 @@ function Header() {
         </h1>
       </Link>
 
-      <div className="menu">
-        <span>
+      <div className={`menu ${isOpen ? "open" : ""}`}>
+        <span className="menu_icon" onClick={() => setIsOpen(true)}>
           <MenuIcon />
         </span>
-        <span>
+        <span className="close_icon" onClick={() => setIsOpen(false)}>
           <CloseIcon />
         </span>
       </div>
 
-      <div className="links_container">
+      <div className={`links_container ${isOpen ? "open" : ""}`}>
         <ul>
           <li>
             <NavLink to="/">Inicio</NavLink>
