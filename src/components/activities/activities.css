@@ -24,6 +24,7 @@
     align-items: flex-start;
     flex-direction: column;
     max-width: 500px;
+    gap: 0;
 
     animation: rightAppear linear;
     animation-timeline: view();

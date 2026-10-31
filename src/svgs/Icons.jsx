@@ -39,3 +39,19 @@ export const CloseIcon = () => {
     </svg>
   );
 };
+
+export const PlayIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 16 16"
+      id="Play--Streamline-Block-Free"
+      height="16"
+      width="16"
+    >
+      <desc>Play Streamline Icon: https://streamlinehq.com</desc>
+      <path fill="#000000" d="m1 0 14 8 -14 8V0Z" stroke-width="1"></path>
+    </svg>
+  );
+};
