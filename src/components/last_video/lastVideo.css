@@ -88,3 +88,62 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .last_video {
+    flex-direction: column;
+    position: relative;
+    gap: 0;
+
+    .clasic_title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 6rem;
+      margin-left: 2rem;
+    }
+
+    .right {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 2rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .left {
+      max-width: 100%;
+      width: 100%;
+
+      h1 {
+        font-size: 4.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .last_video {
+    .clasic_title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 5rem;
+      margin-left: 1rem;
+    }
+
+    .right {
+      img {
+        height: 15rem;
+      }
+    }
+
+    .left {
+      h1 {
+        font-size: 3.8rem;
+      }
+    }
+  }
+}

@@ -22,7 +22,7 @@ function LastVideo() {
         <p className="desc">
           La mesa, el PC, el sonido y cada detalle del nuevo espacio{" "}
           <span>
-            Lil <span>Adams</span>
+            Lil<span>Adams</span>
           </span>
         </p>
         <a href="https://youtube.com" target="_blank">
