@@ -3,6 +3,7 @@ import Hero from "../../components/Hero";
 import Activities from "../../components/activities/Activities";
 import LastVideo from "../../components/last_video/LastVideo";
 import NewVideos from "../../components/new_videos/NewVideos";
+import NextEvent from "../../components/next_event/NextEvent";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <Activities />
       <LastVideo />
       <NewVideos />
+      <NextEvent />
     </main>
   );
 }
