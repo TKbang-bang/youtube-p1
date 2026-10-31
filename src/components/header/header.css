@@ -179,6 +179,7 @@ header {
 
 @media (max-width: 767px) {
   header {
+    padding-inline: 1rem;
     .links_container {
       ul {
         padding-inline: 1rem;

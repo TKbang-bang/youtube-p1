@@ -31,6 +31,13 @@
       width: 45rem;
       height: 30rem;
       object-fit: cover;
+      object-view-box: inset(0);
+      transition: object-view-box 0.2s;
+
+      &:hover {
+        clip-path: 1.2;
+        object-view-box: inset(5%);
+      }
     }
 
     a {
@@ -54,10 +61,6 @@
 
   .left {
     max-width: 25rem;
-
-    h1 {
-      font-size: 4.8rem;
-    }
 
     .desc {
       color: #393946;
@@ -116,10 +119,6 @@
     .left {
       max-width: 100%;
       width: 100%;
-
-      h1 {
-        font-size: 4.2rem;
-      }
     }
   }
 }
@@ -137,12 +136,6 @@
     .right {
       img {
         height: 15rem;
-      }
-    }
-
-    .left {
-      h1 {
-        font-size: 3.8rem;
       }
     }
   }

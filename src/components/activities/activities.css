@@ -29,10 +29,6 @@
     animation: rightAppear linear;
     animation-timeline: view();
     animation-range: entry 0 cover 30%;
-
-    h1 {
-      font-size: 4.8rem;
-    }
   }
 
   .left {
@@ -126,10 +122,6 @@
   .activities {
     .right {
       animation-range: entry 0 cover 20%;
-
-      h1 {
-        font-size: 3.8rem;
-      }
     }
 
     .left {

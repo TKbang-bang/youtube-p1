@@ -10,7 +10,7 @@ function Activities() {
           Actividades
         </p>
 
-        <h1 className="title">Contenido y demás</h1>
+        <h1 className="title big_title">Contenido y demás</h1>
       </div>
 
       <div className="left">

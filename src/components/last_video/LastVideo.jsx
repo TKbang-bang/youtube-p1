@@ -18,7 +18,7 @@ function LastVideo() {
           Ultimo video
         </p>
 
-        <h1 className="title">Mi setup Mejorado 2026</h1>
+        <h1 className="title big_title">Mi setup Mejorado 2026</h1>
         <p className="desc">
           La mesa, el PC, el sonido y cada detalle del nuevo espacio{" "}
           <span>

@@ -12,7 +12,7 @@ function Hero() {
             CREADOR DE CONTENIDO DIGITAL
           </p>
 
-          <h1 className="title hero-title">
+          <h1 className="title hero-title big_title">
             NO ES SOLO
             <span>UN JUEGO</span>
             ES MI MUNDO.
