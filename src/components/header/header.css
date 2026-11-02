@@ -15,7 +15,8 @@ header {
 
   &.is-scrolled {
     background: rgba(16, 16, 20, 0.18);
-    border-color: transparent;
+    /* border-color: transparent; */
+    border: none;
     backdrop-filter: blur(14px);
   }
 
