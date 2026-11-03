@@ -8,18 +8,14 @@ function Videos() {
   const [current, setCurrent] = useState("Todos");
   const [videos, setVideos] = useState([]);
 
-  document.querySelectorAll(".videos_categories li").forEach((li) => {
-    li.addEventListener("click", () => {
-      // console.log(li);
-
-      document
-        .querySelectorAll(".videos_categories li")
-        .forEach((li) => li.classList.remove("active"));
-
-      li.classList.add("active");
-      setCurrent(li.innerText);
+  const changeCategory = (e, category) => {
+    document.querySelectorAll(".videos_categories li").forEach((li) => {
+      li.classList.remove("active");
     });
-  });
+
+    e.target.classList.add("active");
+    setCurrent(category);
+  };
 
   const getCategories = async () => {
     let cats = [];
@@ -46,6 +42,7 @@ function Videos() {
 
   useEffect(() => {
     getCategories();
+    getVideos();
   }, []);
 
   useEffect(() => {
@@ -65,14 +62,18 @@ function Videos() {
         </h1>
       </section>
 
-      <section className="container videos_container">
-        <ul className="videos_categories">
-          <li className="active">Todos</li>
-          {categories.map((category, index) => (
-            <li key={index}>{category}</li>
-          ))}
-        </ul>
+      <ul className="videos_categories container">
+        <li className="active" onClick={(e) => changeCategory(e, "Todos")}>
+          Todos
+        </li>
+        {categories.map((category, index) => (
+          <li key={index} onClick={(e) => changeCategory(e, category)}>
+            {category}
+          </li>
+        ))}
+      </ul>
 
+      <section className="container videos_container">
         <div className="videos_list">
           {videos.map((v, index) => {
             return (

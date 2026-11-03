@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import Home from "./views/home/Home";
 import Footer from "./components/footer/Footer";
 import Videos from "./views/videos/Videos";
+import Events from "./views/eventos/Events";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/videos" element={<Videos />} />
+        <Route path="/eventos" element={<Events />} />
       </Routes>
 
       <Footer />
