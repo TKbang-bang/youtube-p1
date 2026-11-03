@@ -12,6 +12,7 @@ header {
   justify-content: space-between;
   background: transparent;
   padding-inline: 4rem;
+  background: #101014e6;
 
   &.is-scrolled {
     background: rgba(16, 16, 20, 0.18);

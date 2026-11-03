@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "name": "NEXOR CORE TEE",
+    "price": "32,00 €",
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=85",
+    "url": ""
+  },
+  {
+    "id": 2,
+    "name": "SIGNAL HOODIE",
+    "price": "68,00 €",
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=85",
+    "url": ""
+  },
+  {
+    "id": 4,
+    "name": "NEXOR OVERSIZED TEE",
+    "price": "38,00 €",
+    "image": "https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=900&q=85",
+    "url": ""
+  },
+  {
+    "id": 5,
+    "name": "VOID BLACK CAP",
+    "price": "28,00 €",
+    "image": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=900&q=85",
+    "url": ""
+  },
+  {
+    "id": 6,
+    "name": "NEXOR TECH JACKET",
+    "price": "89,00 €",
+    "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85",
+    "url": ""
+  },
+  {
+    "id": 7,
+    "name": "SIGNAL BEANIE",
+    "price": "22,00 €",
+    "image": "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?auto=format&fit=crop&w=900&q=85",
+    "url": ""
+  },
+  {
+    "id": 8,
+    "name": "NEXOR GAMING MOUSE",
+    "price": "59,00 €",
+    "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=900&q=85",
+    "url": ""
+  },
+  {
+    "id": 9,
+    "name": "PULSE MECHANICAL KEYBOARD",
+    "price": "119,00 €",
+    "image": "https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=900&q=85",
+    "url": ""
+  },
+  {
+    "id": 10,
+    "name": "NEXOR STUDIO HEADSET",
+    "price": "79,00 €",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85",
+    "url": ""
+  },
+  {
+    "id": 11,
+    "name": "VOID DESK MAT",
+    "price": "35,00 €",
+    "image": "https://images.unsplash.com/photo-1615869442320-fd02a129c77c?auto=format&fit=crop&w=900&q=85",
+    "url": ""
+  },
+  {
+    "id": 12,
+    "name": "NEXOR SMART BOTTLE",
+    "price": "26,00 €",
+    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=85",
+    "url": ""
+  },
+  {
+    "id": 13,
+    "name": "SIGNAL CROSSBODY BAG",
+    "price": "42,00 €",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85",
+    "url": ""
+  },
+  {
+    "id": 14,
+    "name": "NEXOR TECH BACKPACK",
+    "price": "74,00 €",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=85",
+    "url": ""
+  },
+  {
+    "id": 15,
+    "name": "CORE ZIP HOODIE",
+    "price": "72,00 €",
+    "image": "https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&w=900&q=85",
+    "url": ""
+  },
+  {
+    "id": 16,
+    "name": "NEXOR WALL POSTER",
+    "price": "18,00 €",
+    "image": "https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=900&q=85",
+    "url": ""
+  },
+  {
+    "id": 17,
+    "name": "PULSE RGB LIGHT BAR",
+    "price": "45,00 €",
+    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=85",
+    "url": ""
+  },
+  {
+    "id": 18,
+    "name": "NEXOR COLLECTOR MUG",
+    "price": "16,00 €",
+    "image": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=900&q=85",
+    "url": ""
+  }
+]

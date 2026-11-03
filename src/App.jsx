@@ -5,6 +5,7 @@ import Home from "./views/home/Home";
 import Footer from "./components/footer/Footer";
 import Videos from "./views/videos/Videos";
 import Events from "./views/eventos/Events";
+import Drop from "./views/drop/Drop";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/videos" element={<Videos />} />
         <Route path="/eventos" element={<Events />} />
+        <Route path="/drop" element={<Drop />} />
       </Routes>
 
       <Footer />
