@@ -71,3 +71,8 @@ body {
     font-size: 3.8rem;
   }
 }
+
+::selection {
+  background: var(--purple);
+  color: white;
+}
