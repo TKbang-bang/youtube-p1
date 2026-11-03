@@ -7,6 +7,7 @@ import Videos from "./views/videos/Videos";
 import Events from "./views/eventos/Events";
 import Drop from "./views/drop/Drop";
 import Community from "./views/community/Community";
+import Brands from "./views/brands/Brands";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/eventos" element={<Events />} />
         <Route path="/drop" element={<Drop />} />
         <Route path="/comunidad" element={<Community />} />
+        <Route path="/marcas" element={<Brands />} />
       </Routes>
 
       <Footer />
