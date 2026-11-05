@@ -124,6 +124,40 @@
       }
     }
   }
+
+  .three {
+    background-color: var(--white);
+    color: var(--surface);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+
+    h1,
+    p,
+    a {
+      margin: 0;
+    }
+
+    h1,
+    .ms {
+      max-width: 35rem;
+    }
+
+    .ms {
+      color: var(--muted);
+    }
+
+    a {
+      background-color: var(--orange);
+      text-decoration: none;
+      padding: 1rem 2rem;
+      color: var(--white);
+      font-weight: light;
+      letter-spacing: 1px;
+    }
+  }
 }
 
 @keyframes topShonw {
@@ -152,6 +186,13 @@
 
     .two {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .three {
+      h1,
+      .ms {
+        max-width: 30rem;
+      }
     }
   }
 }
@@ -195,6 +236,13 @@
             margin-top: 2.8rem;
           }
         }
+      }
+    }
+
+    .three {
+      h1,
+      .ms {
+        max-width: 100%;
       }
     }
   }

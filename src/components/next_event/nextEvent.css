@@ -7,12 +7,12 @@
     align-items: center;
 
     .info {
-      p,
+      /* p,
       h1 {
         animation: textShown linear;
         animation-timeline: view();
         animation-range: entry 0 cover 30%;
-      }
+      } */
 
       h1 {
         span {
@@ -36,9 +36,9 @@
       align-items: center;
       transition: ease 0.4s;
 
-      animation: textShown linear;
+      /* animation: textShown linear;
       animation-timeline: view();
-      animation-range: entry 0 cover 30%;
+      animation-range: entry 0 cover 30%; */
 
       &:hover {
         background-color: #1d0d41;

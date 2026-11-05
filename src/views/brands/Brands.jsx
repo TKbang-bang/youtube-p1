@@ -38,6 +38,24 @@ function Brands() {
           );
         })}
       </section>
+
+      <section className="three container">
+        <p className="clasic_title title">
+          <span className="status-dot"></span>
+          Colabora con LilAdams
+        </p>
+
+        <h1 className="title big_title">Vamos a crear algo juntos</h1>
+
+        <p className="ms">
+          Integraciones, campañas, eventos o ideas que aún no existen. Cuéntame
+          lo que tienes en mente.
+        </p>
+
+        <a href="liladamsejemplo@nexor.example" className="title">
+          Envíame un email ↗
+        </a>
+      </section>
     </main>
   );
 }
