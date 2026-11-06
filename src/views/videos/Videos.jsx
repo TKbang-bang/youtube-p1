@@ -8,12 +8,7 @@ function Videos() {
   const [current, setCurrent] = useState("Todos");
   const [videos, setVideos] = useState([]);
 
-  const changeCategory = (e, category) => {
-    document.querySelectorAll(".videos_categories li").forEach((li) => {
-      li.classList.remove("active");
-    });
-
-    e.target.classList.add("active");
+  const changeCategory = (category) => {
     setCurrent(category);
   };
 
@@ -62,12 +57,31 @@ function Videos() {
         </h1>
       </section>
 
-      <ul className="videos_categories container">
+      {/* <ul className="videos_categories container">
         <li className="active" onClick={(e) => changeCategory(e, "Todos")}>
           Todos
         </li>
         {categories.map((category, index) => (
           <li key={index} onClick={(e) => changeCategory(e, category)}>
+            {category}
+          </li>
+        ))}
+      </ul> */}
+
+      <ul className="videos_categories container">
+        <li
+          className={current === "Todos" ? "active" : ""}
+          onClick={() => changeCategory("Todos")}
+        >
+          Todos
+        </li>
+
+        {categories.map((category, index) => (
+          <li
+            key={index}
+            className={current === category ? "active" : ""}
+            onClick={() => changeCategory(category)}
+          >
             {category}
           </li>
         ))}
@@ -80,10 +94,21 @@ function Videos() {
               <article key={index}>
                 <div className="video_container">
                   {v.image_url ? (
-                    <img src={v.image_url} alt="" />
+                    <img
+                      src={v.image_url}
+                      alt={v.title}
+                      loading="lazy"
+                      decoding="async"
+                    />
                   ) : (
                     <div className="no">
-                      <img src="/no-content.png" className="no_content" />
+                      <img
+                        src="/no-content.png"
+                        className="no_content"
+                        alt={v.title}
+                        loading="lazy"
+                        decoding="async"
+                      />
                     </div>
                   )}
                   <span>{v.duration}</span>

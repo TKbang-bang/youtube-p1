@@ -6,7 +6,12 @@ function LastVideo() {
   return (
     <section className="container last_video">
       <div className="right">
-        <img src="/setup2.jpg" alt="" />
+        <img
+          src="/videos/setup.jpg"
+          alt="liladams"
+          loading="lazy"
+          decoding="async"
+        />
         <a href="https://youtube.com" target="_blank">
           <PlayIcon />
         </a>

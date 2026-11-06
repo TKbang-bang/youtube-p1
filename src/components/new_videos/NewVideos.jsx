@@ -18,7 +18,12 @@ function NewVideos() {
           return (
             <article>
               <div className="video_container">
-                <img src={v.image_url} alt="" />
+                <img
+                  src={v.image_url}
+                  alt={v.title}
+                  loading="lazy"
+                  decoding="async"
+                />
                 <span>{v.duration}</span>
               </div>
 

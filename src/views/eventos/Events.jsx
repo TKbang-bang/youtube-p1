@@ -59,7 +59,12 @@ function Events() {
                 </p>
               </div>
 
-              <img src={event.image} alt={event.id} />
+              <img
+                src={event.image}
+                alt={event.id}
+                loading="lazy"
+                decoding="async"
+              />
 
               <div className="info">
                 <p className="title clasic_title">{event.id}</p>
@@ -91,7 +96,12 @@ function Events() {
               <CloseIcon />
             </button>
 
-            <img src={activeEvent.image} alt="" />
+            <img
+              src={activeEvent.image}
+              alt={activeEvent.id}
+              loading="lazy"
+              decoding="async"
+            />
 
             <div className="info">
               <p className="title clasic_title">{activeEvent.id}</p>

@@ -2,6 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./hero.css";
 
+import person from "../assets/helpers/perfil.png";
+
 function Hero() {
   return (
     <section className="hero container" id="home">
@@ -47,7 +49,14 @@ function Hero() {
         </div>
       </div>
 
-      <img className="hero-person" src="/perfil.png" alt="NEXOR" />
+      <img
+        className="hero-person"
+        src={person}
+        alt="liladams"
+        loading="lazy"
+        fetchPriority="high"
+        decoding="async"
+      />
     </section>
   );
 }

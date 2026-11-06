@@ -19,7 +19,12 @@ function Drop() {
         {drops.map((drop) => {
           return (
             <article key={drop.id}>
-              <img src={drop.image} alt={drop.name} />
+              <img
+                src={drop.image}
+                alt={drop.name}
+                loading="lazy"
+                decoding="async"
+              />
 
               <div className="info">
                 <h2 className="title">{drop.name}</h2>

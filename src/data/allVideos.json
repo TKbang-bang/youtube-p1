@@ -1,7 +1,7 @@
 [
   {
     "title": "¿Cuánto cuesta realmente un setup profesional?",
-    "image_url": null,
+    "image_url": "/videos/1.jpg",
     "views": "367.8k",
     "duration": "15:46",
     "about": "Tecnología",
@@ -9,7 +9,7 @@
   },
   {
     "title": "Los retos más imposibles que he hecho",
-    "image_url": "/maq.jpg",
+    "image_url": "/videos/2.jpg",
     "views": "563.9k",
     "duration": "18:24",
     "about": "Retos",
@@ -17,7 +17,7 @@
   },
   {
     "title": "24 horas sin perder una partida",
-    "image_url": "/ga.jpg",
+    "image_url": "/videos/gaming.jpg",
     "views": "113.0k",
     "duration": "33:16",
     "about": "Gaming",
@@ -25,7 +25,7 @@
   },
   {
     "title": "Probé los auriculares más locos del año 2026",
-    "image_url": "/auri.jpg",
+    "image_url": "/videos/auriculares.jpg",
     "views": "180.3k",
     "duration": "13:40",
     "about": "Reviews",
@@ -33,7 +33,7 @@
   },
   {
     "title": "¿Vale la pena en 2026 jugar en teléfono?",
-    "image_url": "/phone.jpg",
+    "image_url": "/videos/telefono.jpg",
     "views": "335.7k",
     "duration": "11:10",
     "about": "Reviews",
@@ -41,7 +41,7 @@
   },
   {
     "title": "Compré el setup gamer más barato de internet",
-    "image_url": "/setup.jpg",
+    "image_url": "/videos/3.jpg",
     "views": "298.4k",
     "duration": "16:48",
     "about": "Reviews",
@@ -49,7 +49,7 @@
   },
   {
     "title": "Construí la base más segura de Minecraft",
-    "image_url": null,
+    "image_url": "/videos/4.jpg",
     "views": "421.5k",
     "duration": "25:32",
     "about": "Gaming",
@@ -57,7 +57,7 @@
   },
   {
     "title": "Intenté sobrevivir 100 días en un mundo extremo",
-    "image_url": null,
+    "image_url": "/videos/5.jpg",
     "views": "892.1k",
     "duration": "42:15",
     "about": "Gaming",
@@ -65,7 +65,7 @@
   },
   {
     "title": "El teclado gamer que parece del futuro",
-    "image_url": null,
+    "image_url": "/videos/6.jpg",
     "views": "145.8k",
     "duration": "12:35",
     "about": "Reviews",
@@ -73,7 +73,7 @@
   },
   {
     "title": "Si pierdo, regalo mi PC gaming",
-    "image_url": null,
+    "image_url": "/videos/7.jpg",
     "views": "756.2k",
     "duration": "21:09",
     "about": "Retos",
@@ -81,7 +81,7 @@
   },
   {
     "title": "Jugué los videojuegos más raros de Steam",
-    "image_url": null,
+    "image_url": "/videos/8.jpg",
     "views": "231.6k",
     "duration": "19:42",
     "about": "Gaming",
@@ -89,7 +89,7 @@
   },
   {
     "title": "Probé una PC gamer de 500 dólares",
-    "image_url": null,
+    "image_url": "/videos/9.jpg",
     "views": "389.2k",
     "duration": "17:26",
     "about": "Reviews",
@@ -97,7 +97,7 @@
   },
   {
     "title": "Sobreviví a la noche más difícil de Minecraft",
-    "image_url": null,
+    "image_url": "/videos/10.jpg",
     "views": "612.7k",
     "duration": "28:13",
     "about": "Gaming",
@@ -105,7 +105,7 @@
   },
   {
     "title": "Mis suscriptores controlan mi partida",
-    "image_url": null,
+    "image_url": "/videos/11.jpg",
     "views": "478.3k",
     "duration": "22:51",
     "about": "Retos",
@@ -113,23 +113,15 @@
   },
   {
     "title": "¿El ratón gamer más rápido del mundo?",
-    "image_url": null,
+    "image_url": "/videos/12.jpg",
     "views": "167.4k",
     "duration": "10:58",
     "about": "Reviews",
     "url": "https://www.youtube.com/watch?v=1g0k5J3X8xM"
   },
   {
-    "title": "Jugué durante 24 horas con los ojos cerrados",
-    "image_url": null,
-    "views": "934.6k",
-    "duration": "31:44",
-    "about": "Retos",
-    "url": "https://www.youtube.com/watch?v=1g0k5J3X8xM"
-  },
-  {
     "title": "Los 10 juegos que tienes que probar este año",
-    "image_url": null,
+    "image_url": "/videos/13.jpg",
     "views": "302.8k",
     "duration": "14:22",
     "about": "Gaming",
@@ -137,7 +129,7 @@
   },
   {
     "title": "Compré una consola portátil misteriosa",
-    "image_url": null,
+    "image_url": "/videos/14.jpg",
     "views": "256.1k",
     "duration": "15:37",
     "about": "Reviews",
@@ -161,7 +153,7 @@
   },
   {
     "title": "Probé una pantalla de 500 Hz y esto pasó",
-    "image_url": null,
+    "image_url": "/videos/15.jpg",
     "views": "276.3k",
     "duration": "13:52",
     "about": "Reviews",
@@ -193,7 +185,7 @@
   },
   {
     "title": "Cada muerte aumenta la dificultad",
-    "image_url": null,
+    "image_url": "/videos/16.jpg",
     "views": "684.2k",
     "duration": "24:41",
     "about": "Retos",
@@ -201,7 +193,7 @@
   },
   {
     "title": "Los secretos que probablemente no conocías de GTA",
-    "image_url": null,
+    "image_url": "/videos/17.jpg",
     "views": "723.5k",
     "duration": "17:55",
     "about": "Gaming",
