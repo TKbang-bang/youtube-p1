@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header";
 import Home from "./views/home/Home";
@@ -10,6 +11,12 @@ import Community from "./views/community/Community";
 import Brands from "./views/brands/Brands";
 
 function App() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
       <Header />
