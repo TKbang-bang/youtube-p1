@@ -57,9 +57,10 @@ function Events() {
               <p className="title clasic_title">{event.subtitle}</p>
               <h1 className="title">{event.title}</h1>
               <p className="date_info">
-                {event.location_city},{" "}
-                {event.location_country && event.location_country.slice(0, 2)} ·{" "}
-                {event.location_name}
+                {event.location_city}
+                {event.location_country &&
+                  `, ${event.location_country.slice(0, 2)}`}{" "}
+                · {event.location_name}
               </p>
 
               <button
@@ -108,9 +109,9 @@ function Events() {
               <div className="l">
                 <p>Ciudad / Tipo de evento</p>
                 <p className="ms">
-                  {activeEvent.location_city},{" "}
+                  {activeEvent.location_city}
                   {activeEvent.location_country &&
-                    activeEvent.location_country.slice(0, 2).toUpperCase()}
+                    `, ${activeEvent.location_country.slice(0, 2).toUpperCase()}`}
                 </p>
               </div>
             </div>

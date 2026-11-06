@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Lil Adams Community Night",
     "subtitle": "Encuentro de Comunidad",
-    "description": "",
+    "description": "Una noche para jugar, conocer a la comunidad y pasar tiempo con el equipo de NEXOR. Habrá partidas, regalos y sesiones especiales con creadores.",
     "image_url": "/event.jpg",
     "day": "Domingo",
     "date_day": 15,
@@ -15,28 +15,30 @@
   },
   {
     "id": 2,
-    "title": "Lil Adams Community Night",
-    "subtitle": "Encuentro de Comunidad",
+    "title": "Torneo Gaming 2026",
+    "subtitle": "Torneo presencial",
+    "description": "Equipos, clasificatorias y una gran final en directo. Compite, anima desde las gradas o sigue toda la acción desde casa.",
     "image_url": "/event.jpg",
-    "day": "Domingo",
-    "date_day": 15,
+    "day": "Sábado",
+    "date_day": 28,
     "date_month": "November",
     "date_year": 2026,
-    "location_city": "Madrid",
+    "location_city": "Barcelona",
     "location_country": "España",
-    "location_name": "The Box Hall"
+    "location_name": "Arena Nova"
   },
   {
     "id": 3,
-    "title": "Lil Adams Community Night",
-    "subtitle": "Encuentro de Comunidad",
+    "title": "Directo benéfico",
+    "subtitle": "Stream solidario",
+    "description": "Doce horas de juegos, retos y colaboraciones para recaudar fondos junto a una causa especial.",
     "image_url": "/event.jpg",
-    "day": "Domingo",
-    "date_day": 15,
-    "date_month": "November",
+    "day": "Sábado",
+    "date_day": 12,
+    "date_month": "Diciembre",
     "date_year": 2026,
-    "location_city": "Madrid",
-    "location_country": "España",
-    "location_name": "The Box Hall"
+    "location_city": "Online",
+    "location_country": null,
+    "location_name": "Youtube / Twitch"
   }
 ]
