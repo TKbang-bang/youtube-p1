@@ -249,6 +249,10 @@
         gap: 0.5rem;
         max-width: 30rem;
 
+        .da {
+          text-transform: capitalize;
+        }
+
         h1,
         p {
           margin: 0;

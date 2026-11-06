@@ -52,7 +52,11 @@ function Brands() {
           lo que tienes en mente.
         </p>
 
-        <a href="liladamsejemplo@nexor.example" className="title">
+        <a
+          href="mailto:liladamsejemplo@gmail.example"
+          className="title"
+          // target="_blank"
+        >
           Envíame un email ↗
         </a>
       </section>

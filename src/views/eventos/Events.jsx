@@ -10,6 +10,7 @@ function Events() {
   const [minutes, setMinutes] = useState(33);
   const [activeEvent, setActiveEvent] = useState({});
   const [isEventActive, setIsEventActive] = useState(false);
+  const eventDate = new Date(activeEvent.date);
 
   return (
     <main className="events">
@@ -42,35 +43,43 @@ function Events() {
       </section>
 
       <section className="down container">
-        {events.map((event) => (
-          <article className="event" key={event.id}>
-            <div className="one">
-              <h1 className="title">{event.date_day}</h1>
-              <p className="title clasic_title">
-                {event.date_month.slice(0, 3)}
-              </p>
-            </div>
+        {events.map((event) => {
+          const date = new Date(event.date);
 
-            <img src={event.image_url} alt={event.title} />
+          return (
+            <article className="event" key={event.id}>
+              <div className="one">
+                <h1 className="title">
+                  {String(date.getDate()).padStart(2, "0")}
+                </h1>
+                <p className="title clasic_title">
+                  {date
+                    .toLocaleDateString("es-ES", { month: "short" })
+                    .toUpperCase()}
+                </p>
+              </div>
 
-            <div className="info">
-              <p className="title clasic_title">{event.subtitle}</p>
-              <h1 className="title">{event.title}</h1>
-              <p className="date_info">
-                {event.location_city}
-                {event.location_country &&
-                  `, ${event.location_country.slice(0, 2)}`}{" "}
-                · {event.location_name}
-              </p>
+              <img src={event.image} alt={event.id} />
 
-              <button
-                onClick={() => (setActiveEvent(event), setIsEventActive(true))}
-              >
-                Ver Datalles →
-              </button>
-            </div>
-          </article>
-        ))}
+              <div className="info">
+                <p className="title clasic_title">{event.id}</p>
+                <h1 className="title">{event.title}</h1>
+                <p className="date_info">
+                  {event.city} · {event.venue}
+                </p>
+
+                <button
+                  onClick={() => (
+                    setActiveEvent(event),
+                    setIsEventActive(true)
+                  )}
+                >
+                  Ver Datalles →
+                </button>
+              </div>
+            </article>
+          );
+        })}
       </section>
 
       {isEventActive && (
@@ -82,15 +91,19 @@ function Events() {
               <CloseIcon />
             </button>
 
-            <img src={activeEvent.image_url} alt="" />
+            <img src={activeEvent.image} alt="" />
 
             <div className="info">
-              <p className="title clasic_title">{activeEvent.subtitle}</p>
+              <p className="title clasic_title">{activeEvent.id}</p>
               <h1 className="title">{activeEvent.title}</h1>
 
-              <p className="ms">
-                {activeEvent.day}, {activeEvent.date_day} de{" "}
-                {activeEvent.date_month} de {activeEvent.date_year}
+              <p className="ms da">
+                {eventDate.toLocaleDateString("es-ES", {
+                  weekday: "long",
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                })}
               </p>
 
               <p className="title clasic_title ab">Sobre el evento</p>
@@ -103,16 +116,12 @@ function Events() {
 
               <div className="l">
                 <p>Establecimiento / Plataforma</p>
-                <p className="ms">{activeEvent.location_name}</p>
+                <p className="ms">{activeEvent.venue}</p>
               </div>
 
               <div className="l">
                 <p>Ciudad / Tipo de evento</p>
-                <p className="ms">
-                  {activeEvent.location_city}
-                  {activeEvent.location_country &&
-                    `, ${activeEvent.location_country.slice(0, 2).toUpperCase()}`}
-                </p>
+                <p className="ms">{activeEvent.city}</p>
               </div>
             </div>
           </div>

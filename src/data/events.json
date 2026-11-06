@@ -1,44 +1,32 @@
 [
   {
-    "id": 1,
-    "title": "Lil Adams Community Night",
-    "subtitle": "Encuentro de Comunidad",
-    "description": "Una noche para jugar, conocer a la comunidad y pasar tiempo con el equipo de NEXOR. Habrá partidas, regalos y sesiones especiales con creadores.",
-    "image_url": "/event.jpg",
-    "day": "Domingo",
-    "date_day": 15,
-    "date_month": "November",
-    "date_year": 2026,
-    "location_city": "Madrid",
-    "location_country": "España",
-    "location_name": "The Box Hall"
+    "id": "community-night",
+    "title": "NEXOR Community Night",
+    "date": "2026-11-15T19:00:00",
+    "city": "Madrid, ES",
+    "venue": "The Box Hall",
+    "eyebrow": "ENCUENTRO DE COMUNIDAD",
+    "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1200&q=85",
+    "description": "Una noche para jugar, conocer a la comunidad y pasar tiempo con el equipo de NEXOR. Habrá partidas, regalos y sesiones especiales con creadores."
   },
   {
-    "id": 2,
+    "id": "gaming-2026",
     "title": "Torneo Gaming 2026",
-    "subtitle": "Torneo presencial",
-    "description": "Equipos, clasificatorias y una gran final en directo. Compite, anima desde las gradas o sigue toda la acción desde casa.",
-    "image_url": "/event.jpg",
-    "day": "Sábado",
-    "date_day": 28,
-    "date_month": "November",
-    "date_year": 2026,
-    "location_city": "Barcelona",
-    "location_country": "España",
-    "location_name": "Arena Nova"
+    "date": "2026-11-28T16:00:00",
+    "city": "Barcelona, ES",
+    "venue": "Arena Nova",
+    "eyebrow": "TORNEO PRESENCIAL",
+    "image": "https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=1200&q=85",
+    "description": "Equipos, clasificatorias y una gran final en directo. Compite, anima desde las gradas o sigue toda la acción desde casa."
   },
   {
-    "id": 3,
+    "id": "charity-stream",
     "title": "Directo benéfico",
-    "subtitle": "Stream solidario",
-    "description": "Doce horas de juegos, retos y colaboraciones para recaudar fondos junto a una causa especial.",
-    "image_url": "/event.jpg",
-    "day": "Sábado",
-    "date_day": 12,
-    "date_month": "Diciembre",
-    "date_year": 2026,
-    "location_city": "Online",
-    "location_country": null,
-    "location_name": "Youtube / Twitch"
+    "date": "2026-12-12T18:00:00",
+    "city": "Online",
+    "venue": "Twitch / YouTube",
+    "eyebrow": "STREAM SOLIDARIO",
+    "image": "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=85",
+    "description": "Doce horas de juegos, retos y colaboraciones para recaudar fondos junto a una causa especial."
   }
 ]
